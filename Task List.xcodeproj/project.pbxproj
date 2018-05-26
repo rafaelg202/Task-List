@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B779394C20B9FD840031765A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779394B20B9FD840031765A /* AppDelegate.swift */; };
-		B779394E20B9FD840031765A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779394D20B9FD840031765A /* ViewController.swift */; };
 		B779395120B9FD840031765A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B779394F20B9FD840031765A /* Main.storyboard */; };
 		B779395320B9FD850031765A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B779395220B9FD850031765A /* Assets.xcassets */; };
 		B779395620B9FD850031765A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B779395420B9FD850031765A /* LaunchScreen.storyboard */; };
+		B779395E20BA01F50031765A /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779395D20BA01F50031765A /* TaskTableViewController.swift */; };
+		B779396020BA02C10031765A /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779395F20BA02C10031765A /* AddTaskViewController.swift */; };
+		B779396220BA03DC0031765A /* TaskUserDfaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779396120BA03DC0031765A /* TaskUserDfaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B779394820B9FD830031765A /* Task List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B779394B20B9FD840031765A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B779394D20B9FD840031765A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B779395020B9FD840031765A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B779395220B9FD850031765A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B779395520B9FD850031765A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B779395720B9FD850031765A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B779395D20BA01F50031765A /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		B779395F20BA02C10031765A /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		B779396120BA03DC0031765A /* TaskUserDfaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUserDfaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				B779394B20B9FD840031765A /* AppDelegate.swift */,
-				B779394D20B9FD840031765A /* ViewController.swift */,
+				B779395D20BA01F50031765A /* TaskTableViewController.swift */,
+				B779395F20BA02C10031765A /* AddTaskViewController.swift */,
+				B779396120BA03DC0031765A /* TaskUserDfaults.swift */,
 				B779394F20B9FD840031765A /* Main.storyboard */,
 				B779395220B9FD850031765A /* Assets.xcassets */,
 				B779395420B9FD850031765A /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B779394E20B9FD840031765A /* ViewController.swift in Sources */,
+				B779395E20BA01F50031765A /* TaskTableViewController.swift in Sources */,
+				B779396220BA03DC0031765A /* TaskUserDfaults.swift in Sources */,
+				B779396020BA02C10031765A /* AddTaskViewController.swift in Sources */,
 				B779394C20B9FD840031765A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

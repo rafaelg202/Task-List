@@ -13,7 +13,7 @@
         <!--Task List-->
         <scene sceneID="ORG-Ni-8LY">
             <objects>
-                <tableViewController id="9uB-8a-uc9" sceneMemberID="viewController">
+                <tableViewController id="9uB-8a-uc9" customClass="TaskTableViewController" customModule="Task_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MOR-hq-VbT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,18 +44,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjc-RG-fO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016.8" y="90.404797601199405"/>
+            <point key="canvasLocation" x="796" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Task View Controller-->
         <scene sceneID="oGn-pr-4XR">
             <objects>
-                <viewController id="Qjz-4Q-z07" sceneMemberID="viewController">
+                <viewController id="Qjz-4Q-z07" customClass="AddTaskViewController" customModule="Task_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SNY-B4-IP5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicionar uma tarefa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-8V-p5u">
-                                <rect key="frame" x="16" y="92" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-8V-p5u">
+                                <rect key="frame" x="16" y="92" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,6 +69,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-zO-myc">
                                 <rect key="frame" x="155" y="155" width="65" height="30"/>
                                 <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="AddTask:" destination="Qjz-4Q-z07" eventType="touchUpInside" id="Fob-66-dko"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,10 +86,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Nd-8S-lL2"/>
                     </view>
+                    <connections>
+                        <outlet property="TaskField" destination="eam-b5-jGP" id="8RF-xk-NfI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzG-qV-ooi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="89.505247376311857"/>
+            <point key="canvasLocation" x="1529" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ns8-na-YGz">
