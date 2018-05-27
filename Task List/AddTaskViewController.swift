@@ -18,7 +18,7 @@ class AddTaskViewController: UIViewController {
             
             let task = TaskUserDefaults()
             task.save(task: textTyped)
-            TaskField.text = "
+            TaskField.text = ""
             
             
             let data = task.list()

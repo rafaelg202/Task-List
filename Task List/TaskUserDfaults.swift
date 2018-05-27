@@ -14,6 +14,13 @@ class TaskUserDefaults{
     let key = "taskList"
     var tasks: [String] = []
     
+    func remove(index: Int){
+        tasks = list()
+        
+        tasks.remove(at: index)
+        UserDefaults.standard.set(tasks, forKey: key)
+    }
+    
     func save(task: String) {
         
         //recuparate saved tasks
